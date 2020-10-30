@@ -1,0 +1,182 @@
+2020-10-28 10:57:06 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-2[0;39m | [1;32mcom.fzy.admin.fp.common.spring.base.BaseContent[0;39m | com.fzy.admin.fp.common.validation.ValidatorResolver.resolveArgument(ValidatorResolver.java:52)--com.fzy.admin.fp.common.validation.exception.ValidatorException: 用户名应为2-7位的字符
+2020-10-28 10:57:52 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-3[0;39m | [1;32mcom.fzy.admin.fp.common.spring.base.BaseContent[0;39m | com.fzy.admin.fp.common.validation.ValidatorResolver.resolveArgument(ValidatorResolver.java:52)--com.fzy.admin.fp.common.validation.exception.ValidatorException: 用户名应为2-7位的字符
+2020-10-28 10:58:05 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-7[0;39m | [1;32mcom.fzy.admin.fp.common.spring.base.BaseContent[0;39m | com.fzy.admin.fp.common.validation.ValidatorResolver.resolveArgument(ValidatorResolver.java:52)--com.fzy.admin.fp.common.validation.exception.ValidatorException: 用户名应为2-7位的字符
+2020-10-28 10:58:09 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-8[0;39m | [1;32mcom.fzy.admin.fp.common.spring.base.BaseContent[0;39m | com.fzy.admin.fp.common.validation.ValidatorResolver.resolveArgument(ValidatorResolver.java:52)--com.fzy.admin.fp.common.validation.exception.ValidatorException: 用户名应为2-7位的字符
+2020-10-28 10:58:13 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-9[0;39m | [1;32mcom.fzy.admin.fp.common.spring.base.BaseContent[0;39m | com.fzy.admin.fp.common.validation.ValidatorResolver.resolveArgument(ValidatorResolver.java:52)--com.fzy.admin.fp.common.validation.exception.ValidatorException: 用户名应为2-7位的字符
+2020-10-28 10:58:20 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-10[0;39m | [1;32mcom.fzy.admin.fp.common.spring.base.BaseContent[0;39m | com.fzy.admin.fp.common.validation.ValidatorResolver.resolveArgument(ValidatorResolver.java:52)--com.fzy.admin.fp.common.validation.exception.ValidatorException: 用户名应为2-7位的字符
+2020-10-28 10:58:23 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-2[0;39m | [1;32mcom.fzy.admin.fp.common.spring.base.BaseContent[0;39m | com.fzy.admin.fp.common.validation.ValidatorResolver.resolveArgument(ValidatorResolver.java:52)--com.fzy.admin.fp.common.validation.exception.ValidatorException: 用户名应为2-7位的字符
+2020-10-28 10:58:42 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-1[0;39m | [1;32mcom.fzy.admin.fp.common.spring.base.BaseContent[0;39m | com.fzy.admin.fp.common.validation.ValidatorResolver.resolveArgument(ValidatorResolver.java:52)--com.fzy.admin.fp.common.validation.exception.ValidatorException: 用户名应为2-7位的字符,并且只能
+2020-10-28 10:59:02 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-3[0;39m | [1;32mcom.fzy.admin.fp.common.spring.base.BaseContent[0;39m | com.fzy.admin.fp.common.validation.ValidatorResolver.resolveArgument(ValidatorResolver.java:52)--com.fzy.admin.fp.common.validation.exception.ValidatorException: 用户名应为2-7位,并且只能英文字母加中文
+2020-10-28 11:00:12 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-6[0;39m | [1;32mcom.fzy.admin.fp.common.spring.base.BaseContent[0;39m | com.fzy.admin.fp.common.validation.ValidatorResolver.resolveArgument(ValidatorResolver.java:52)--com.fzy.admin.fp.common.validation.exception.ValidatorException: 用户名应为2-7位长度,只能英文字母加中文
+2020-10-28 11:02:24 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-7[0;39m | [1;32mcom.fzy.admin.fp.common.spring.base.BaseContent[0;39m | com.fzy.admin.fp.common.validation.ValidatorResolver.resolveArgument(ValidatorResolver.java:52)--com.fzy.admin.fp.common.validation.exception.ValidatorException: 用户名应为2-7位长度,只能英文字母加中文
+2020-10-28 11:04:48 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-7[0;39m | [1;32mcom.fzy.admin.fp.common.spring.base.BaseContent[0;39m | com.fzy.admin.fp.common.validation.ValidatorResolver.resolveArgument(ValidatorResolver.java:52)--com.fzy.admin.fp.common.validation.exception.ValidatorException: 用户名应为2-7位长度,只能英文字母加中文
+2020-10-28 11:05:44 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-2[0;39m | [1;32mcom.fzy.admin.fp.common.spring.base.BaseContent[0;39m | com.fzy.admin.fp.common.validation.ValidatorResolver.resolveArgument(ValidatorResolver.java:52)--com.fzy.admin.fp.common.validation.exception.ValidatorException: 用户名应为2-7位长度,只能英文字母加中文
+2020-10-28 11:05:50 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-4[0;39m | [1;32mcom.fzy.admin.fp.common.spring.base.BaseContent[0;39m | com.fzy.admin.fp.common.validation.ValidatorResolver.resolveArgument(ValidatorResolver.java:52)--com.fzy.admin.fp.common.validation.exception.ValidatorException: 用户名应为2-7位长度,只能英文字母加中文
+2020-10-28 11:05:55 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-1[0;39m | [1;32mcom.fzy.admin.fp.common.spring.base.BaseContent[0;39m | com.fzy.admin.fp.common.validation.ValidatorResolver.resolveArgument(ValidatorResolver.java:52)--com.fzy.admin.fp.common.validation.exception.ValidatorException: 用户名应为2-7位长度,只能英文字母加中文
+2020-10-28 11:08:30 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-3[0;39m | [1;32mcom.fzy.admin.fp.common.spring.base.BaseContent[0;39m | com.fzy.admin.fp.common.validation.ValidatorResolver.resolveArgument(ValidatorResolver.java:52)--com.fzy.admin.fp.common.validation.exception.ValidatorException: 用户名应为2-7位长度,只能英文字母加中文
+2020-10-28 11:10:07 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-4[0;39m | [1;32mcom.fzy.admin.fp.common.spring.base.BaseContent[0;39m | com.fzy.admin.fp.common.validation.ValidatorResolver.resolveArgument(ValidatorResolver.java:52)--com.fzy.admin.fp.common.validation.exception.ValidatorException: 用户名应为2-7位长度,只能英文字母加中文
+2020-10-28 11:51:28 | [1;31mERROR[0;39m | [1;33mmain[0;39m | [1;32morg.springframework.boot.SpringApplication[0;39m | Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'advertiseController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'advertiseService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'merchantService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'storeService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'storeRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Either use @Param on all parameters except Pageable and Sort typed once, or none at all!
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1268)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:551)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:756)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.__refresh(AbstractApplicationContext.java:542)
+	at org.springframework.context.support.AbstractApplicationContext.jrLockAndRefresh(AbstractApplicationContext.java:40002)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:41008)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:124)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.fzy.admin.fp.LysjPayMasterApplication.main(LysjPayMasterApplication.java:41)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'advertiseService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'merchantService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'storeService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'storeRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Either use @Param on all parameters except Pageable and Sort typed once, or none at all!
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1268)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:551)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:522)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:496)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:627)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:171)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'merchantService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'storeService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'storeRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Either use @Param on all parameters except Pageable and Sort typed once, or none at all!
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1268)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:551)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:522)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:496)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:627)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:171)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318)
+	... 32 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'storeService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'storeRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Either use @Param on all parameters except Pageable and Sort typed once, or none at all!
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1268)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:551)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:522)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:496)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:627)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:171)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318)
+	... 45 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'storeRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Either use @Param on all parameters except Pageable and Sort typed once, or none at all!
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1630)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:522)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:496)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:627)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:171)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318)
+	... 58 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Either use @Param on all parameters except Pageable and Sort typed once, or none at all!
+	at org.springframework.util.Assert.isTrue(Assert.java:92)
+	at org.springframework.data.repository.query.Parameters.assertEitherAllParamAnnotatedOrNone(Parameters.java:308)
+	at org.springframework.data.repository.query.Parameters.<init>(Parameters.java:102)
+	at org.springframework.data.jpa.repository.query.JpaParameters.<init>(JpaParameters.java:43)
+	at org.springframework.data.jpa.repository.query.JpaQueryMethod.createParameters(JpaQueryMethod.java:335)
+	at org.springframework.data.jpa.repository.query.JpaQueryMethod.createParameters(JpaQueryMethod.java:54)
+	at org.springframework.data.repository.query.QueryMethod.<init>(QueryMethod.java:77)
+	at org.springframework.data.jpa.repository.query.JpaQueryMethod.<init>(JpaQueryMethod.java:90)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:77)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.<init>(RepositoryFactorySupport.java:451)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:223)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.initAndReturn(RepositoryFactoryBeanSupport.java:277)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:263)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:116)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1688)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1626)
+	... 70 common frames omitted
+2020-10-28 11:52:39 | [1;31mERROR[0;39m | [1;33mmain[0;39m | [1;32morg.springframework.boot.diagnostics.LoggingFailureAnalysisReporter[0;39m | 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.fzy.admin.fp.merchant.merchant.repository.StoreRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.fzy.admin.fp.merchant.merchant.repository.StoreRepository' in your configuration.
+
+2020-10-28 11:55:44 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-9[0;39m | [1;32mcom.fzy.admin.fp.file.upload.service.UploadFileService[0;39m | 系统找不到图像文件：WorkDir/temp/md5/thumbnail/63DAA64068BC41E381B8184354215313.png
+2020-10-28 13:42:01 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-1[0;39m | [1;32mcom.fzy.admin.fp.file.upload.service.UploadFileService[0;39m | 系统找不到图像文件：WorkDir/temp/md5/4C3EF657CB8C46DA88F828EBF7A349C7.png
+2020-10-28 13:46:26 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-4[0;39m | [1;32mcom.fzy.admin.fp.common.spring.base.BaseContent[0;39m | com.fzy.admin.fp.common.validation.ValidatorResolver.resolveArgument(ValidatorResolver.java:52)--com.fzy.admin.fp.common.validation.exception.ValidatorException: 用户名应为英文、数字、下划线组成的5-17位字符
+2020-10-28 13:46:38 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-10[0;39m | [1;32mcom.fzy.admin.fp.common.spring.base.BaseContent[0;39m | com.fzy.admin.fp.common.validation.ValidatorResolver.resolveArgument(ValidatorResolver.java:52)--com.fzy.admin.fp.common.validation.exception.ValidatorException: 用户名应为英文、数字、下划线组成的5-17位字符
+2020-10-28 13:48:36 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-6[0;39m | [1;32mcom.fzy.admin.fp.common.spring.base.BaseContent[0;39m | com.fzy.admin.fp.common.validation.ValidatorResolver.resolveArgument(ValidatorResolver.java:52)--com.fzy.admin.fp.common.validation.exception.ValidatorException: 用户名应为英文、数字、下划线组成的5-17位字符
+2020-10-28 13:50:32 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-7[0;39m | [1;32mcom.fzy.admin.fp.common.spring.base.BaseContent[0;39m | com.fzy.admin.fp.common.validation.ValidatorResolver.resolveArgument(ValidatorResolver.java:52)--com.fzy.admin.fp.common.validation.exception.ValidatorException: 用户名应为英文、数字、下划线组成的5-17位字符
+2020-10-28 13:50:35 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-9[0;39m | [1;32mcom.fzy.admin.fp.common.spring.base.BaseContent[0;39m | com.fzy.admin.fp.common.validation.ValidatorResolver.resolveArgument(ValidatorResolver.java:52)--com.fzy.admin.fp.common.validation.exception.ValidatorException: 用户名应为英文、数字、下划线组成的5-17位字符
+2020-10-28 13:50:39 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-1[0;39m | [1;32mcom.fzy.admin.fp.common.spring.base.BaseContent[0;39m | com.fzy.admin.fp.common.validation.ValidatorResolver.resolveArgument(ValidatorResolver.java:52)--com.fzy.admin.fp.common.validation.exception.ValidatorException: 用户名应为英文、数字、下划线组成的5-17位字符
+2020-10-28 13:50:41 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-4[0;39m | [1;32mcom.fzy.admin.fp.common.spring.base.BaseContent[0;39m | com.fzy.admin.fp.common.validation.ValidatorResolver.resolveArgument(ValidatorResolver.java:52)--com.fzy.admin.fp.common.validation.exception.ValidatorException: 用户名应为英文、数字、下划线组成的5-17位字符
+2020-10-28 13:51:09 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-8[0;39m | [1;32mcom.fzy.admin.fp.file.upload.service.UploadFileService[0;39m | 系统找不到图像文件：WorkDir/temp/md5/thumbnail/63DAA64068BC41E381B8184354215313.png
+2020-10-28 13:51:47 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-10[0;39m | [1;32mcom.fzy.admin.fp.file.upload.service.UploadFileService[0;39m | 系统找不到图像文件：WorkDir/temp/md5/thumbnail/63DAA64068BC41E381B8184354215313.png
+2020-10-28 13:51:51 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-6[0;39m | [1;32mcom.fzy.admin.fp.file.upload.service.UploadFileService[0;39m | 系统找不到图像文件：WorkDir/temp/md5/thumbnail/63DAA64068BC41E381B8184354215313.png
+2020-10-28 13:55:03 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-2[0;39m | [1;32mcom.fzy.admin.fp.file.upload.service.UploadFileService[0;39m | 系统找不到图像文件：WorkDir/temp/md5/thumbnail/63DAA64068BC41E381B8184354215313.png
+2020-10-28 13:55:03 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-9[0;39m | [1;32mcom.fzy.admin.fp.file.upload.service.UploadFileService[0;39m | 系统找不到图像文件：WorkDir/temp/md5/thumbnail/C14D21492A1E42B0AABE1B67FD3EFCB8.png
+2020-10-28 13:59:04 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-5[0;39m | [1;32mcom.fzy.admin.fp.file.upload.service.UploadFileService[0;39m | 系统找不到图像文件：WorkDir/temp/md5/thumbnail/63DAA64068BC41E381B8184354215313.png
+2020-10-28 13:59:26 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-5[0;39m | [1;32mcom.fzy.admin.fp.file.upload.service.UploadFileService[0;39m | 系统找不到图像文件：WorkDir/temp/md5/thumbnail/63DAA64068BC41E381B8184354215313.png
+2020-10-28 17:37:54 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-8[0;39m | [1;32morg.hibernate.engine.jdbc.spi.SqlExceptionHelper[0;39m | In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'shual_db.lysj_order_order.merchant_id'; this is incompatible with sql_mode=only_full_group_by
+2020-10-28 17:37:54 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-8[0;39m | [1;32mcom.fzy.admin.fp.common.spring.base.BaseContent[0;39m | org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:261)--org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2020-10-28 17:38:15 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-9[0;39m | [1;32mcom.fzy.admin.fp.file.upload.service.UploadFileService[0;39m | 系统找不到图像文件：WorkDir/temp/md5/thumbnail/B1E7497773274474862E2F723EEE9034.jpg
+2020-10-28 17:38:15 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-1[0;39m | [1;32mcom.fzy.admin.fp.file.upload.service.UploadFileService[0;39m | 系统找不到图像文件：WorkDir/temp/md5/thumbnail/CC63056EF6164B8E999B031FA32DC1C6.png
+2020-10-28 17:38:15 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-10[0;39m | [1;32mcom.fzy.admin.fp.file.upload.service.UploadFileService[0;39m | 系统找不到图像文件：WorkDir/temp/md5/thumbnail/0A3D25E8367245AB8BD7C3EF832CEEDF.jpg
+2020-10-28 17:38:15 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-4[0;39m | [1;32mcom.fzy.admin.fp.file.upload.service.UploadFileService[0;39m | 系统找不到图像文件：WorkDir/temp/md5/thumbnail/D05EFA1A74144FBFB9696C479E85957B.jpg
+2020-10-28 17:38:15 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-8[0;39m | [1;32mcom.fzy.admin.fp.file.upload.service.UploadFileService[0;39m | 系统找不到图像文件：WorkDir/temp/md5/thumbnail/CF9A164DA79A4F2DB7A2ACA6E2D6113F.png
+2020-10-28 17:38:36 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-1[0;39m | [1;32morg.hibernate.engine.jdbc.spi.SqlExceptionHelper[0;39m | In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'shual_db.lysj_order_order.merchant_id'; this is incompatible with sql_mode=only_full_group_by
+2020-10-28 17:38:36 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-1[0;39m | [1;32mcom.fzy.admin.fp.common.spring.base.BaseContent[0;39m | org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:261)--org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2020-10-28 17:46:20 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-7[0;39m | [1;32morg.hibernate.engine.jdbc.spi.SqlExceptionHelper[0;39m | In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'shual_db.lysj_order_order.merchant_id'; this is incompatible with sql_mode=only_full_group_by
+2020-10-28 17:46:20 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-7[0;39m | [1;32mcom.fzy.admin.fp.common.spring.base.BaseContent[0;39m | org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:261)--org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2020-10-28 17:46:32 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-6[0;39m | [1;32morg.hibernate.engine.jdbc.spi.SqlExceptionHelper[0;39m | In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'shual_db.lysj_order_order.merchant_id'; this is incompatible with sql_mode=only_full_group_by
+2020-10-28 17:46:32 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-6[0;39m | [1;32mcom.fzy.admin.fp.common.spring.base.BaseContent[0;39m | org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:261)--org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2020-10-28 17:46:41 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-7[0;39m | [1;32mcom.fzy.admin.fp.file.upload.service.UploadFileService[0;39m | 系统找不到图像文件：WorkDir/temp/md5/thumbnail/B1E7497773274474862E2F723EEE9034.jpg
+2020-10-28 17:46:41 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-1[0;39m | [1;32mcom.fzy.admin.fp.file.upload.service.UploadFileService[0;39m | 系统找不到图像文件：WorkDir/temp/md5/thumbnail/0A3D25E8367245AB8BD7C3EF832CEEDF.jpg
+2020-10-28 17:46:41 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-8[0;39m | [1;32mcom.fzy.admin.fp.file.upload.service.UploadFileService[0;39m | 系统找不到图像文件：WorkDir/temp/md5/thumbnail/D05EFA1A74144FBFB9696C479E85957B.jpg
+2020-10-28 17:46:41 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-10[0;39m | [1;32mcom.fzy.admin.fp.file.upload.service.UploadFileService[0;39m | 系统找不到图像文件：WorkDir/temp/md5/thumbnail/CF9A164DA79A4F2DB7A2ACA6E2D6113F.png
+2020-10-28 17:46:41 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-4[0;39m | [1;32mcom.fzy.admin.fp.file.upload.service.UploadFileService[0;39m | 系统找不到图像文件：WorkDir/temp/md5/thumbnail/CC63056EF6164B8E999B031FA32DC1C6.png
+2020-10-28 17:46:44 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-6[0;39m | [1;32morg.hibernate.engine.jdbc.spi.SqlExceptionHelper[0;39m | In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'shual_db.lysj_order_order.merchant_id'; this is incompatible with sql_mode=only_full_group_by
+2020-10-28 17:46:44 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-6[0;39m | [1;32mcom.fzy.admin.fp.common.spring.base.BaseContent[0;39m | org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:261)--org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2020-10-28 17:47:28 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-5[0;39m | [1;32morg.hibernate.engine.jdbc.spi.SqlExceptionHelper[0;39m | In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'shual_db.lysj_order_order.merchant_id'; this is incompatible with sql_mode=only_full_group_by
+2020-10-28 17:47:28 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-5[0;39m | [1;32mcom.fzy.admin.fp.common.spring.base.BaseContent[0;39m | org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:261)--org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2020-10-28 18:18:05 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-3[0;39m | [1;32mcom.fzy.admin.fp.file.upload.service.UploadFileService[0;39m | 系统找不到图像文件：WorkDir/temp/md5/thumbnail/B1E7497773274474862E2F723EEE9034.jpg
+2020-10-28 18:18:05 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-6[0;39m | [1;32mcom.fzy.admin.fp.file.upload.service.UploadFileService[0;39m | 系统找不到图像文件：WorkDir/temp/md5/thumbnail/CC63056EF6164B8E999B031FA32DC1C6.png
+2020-10-28 18:18:05 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-9[0;39m | [1;32mcom.fzy.admin.fp.file.upload.service.UploadFileService[0;39m | 系统找不到图像文件：WorkDir/temp/md5/thumbnail/CF9A164DA79A4F2DB7A2ACA6E2D6113F.png
+2020-10-28 18:18:05 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-4[0;39m | [1;32mcom.fzy.admin.fp.file.upload.service.UploadFileService[0;39m | 系统找不到图像文件：WorkDir/temp/md5/thumbnail/D05EFA1A74144FBFB9696C479E85957B.jpg
+2020-10-28 18:18:05 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-8[0;39m | [1;32mcom.fzy.admin.fp.file.upload.service.UploadFileService[0;39m | 系统找不到图像文件：WorkDir/temp/md5/thumbnail/0A3D25E8367245AB8BD7C3EF832CEEDF.jpg
+2020-10-28 18:30:17 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-8[0;39m | [1;32mcom.fzy.admin.fp.file.upload.service.UploadFileService[0;39m | 系统找不到图像文件：WorkDir/temp/md5/221C89A84DC449058A6F7D0C0B7B2A0A.png
+2020-10-28 18:30:26 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-8[0;39m | [1;32mcom.fzy.admin.fp.file.upload.service.UploadFileService[0;39m | 系统找不到图像文件：WorkDir/temp/md5/4C3EF657CB8C46DA88F828EBF7A349C7.png
+2020-10-28 18:43:56 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-10[0;39m | [1;32mcom.fzy.admin.fp.file.upload.service.UploadFileService[0;39m | 系统找不到图像文件：WorkDir/temp/md5/221C89A84DC449058A6F7D0C0B7B2A0A.png
+2020-10-28 18:44:02 | [1;31mERROR[0;39m | [1;33mhttp-nio-8099-exec-2[0;39m | [1;32mcom.fzy.admin.fp.file.upload.service.UploadFileService[0;39m | 系统找不到图像文件：WorkDir/temp/md5/4C3EF657CB8C46DA88F828EBF7A349C7.png

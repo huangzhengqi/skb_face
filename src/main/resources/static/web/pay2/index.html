@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>付款</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta content="telephone=no" name="format-detection" />
+		<meta http-equiv='Page-Enter' content="revealTrans(Duration=5,Transitionv=13)">
+		<meta http-equiv='Page-Exit' content="revealTrans(Duration=5,Transitionv=4)">
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script type="text/javascript" src="scripts/jquery-1.10.2.min.js"></script>
+		<script src="http://res.wx.qq.com/open/js/jweixin-1.4.0.js" type="text/javascript"></script>
+		<script src="scripts/wx.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div class="box">
+			<div class="payment">
+				<div class="topBox">
+					<p class="merchantName">
+						<img src="image/merchants.png" style="width: 7vw; margin-right: 2vw;">
+						<span class="merchantsName"></span>
+					</p>
+					<div class="money">
+						<span style="font-size: 13vw; font-family: PingFangSC-regular; line-height: 20vw;">￥</span>
+						<div id='ipt' placeholder='请向收银员询问应付金额'></div>
+						<!-- <input type="text" id="ipt" placeholder="" readonly="readonly" οnclick="$(this).blur();"/> -->
+					</div>
+					<div style="display: flex; background: #fff; width: 87%; margin: auto; font-family: SFUIText-regular;">
+						<div class="cent" onclick="$('.text').focus();">添加备注</div>
+						<textarea class="text" placeholder="(不超过20字)" onfocus="$('#keyboard').hide();" onblur="$('#keyboard').fadeIn();" maxlength="20"></textarea>
+					</div>
+				</div>
+				<div class="bottomBox">
+					<input type="button" id="btn" value="确认付款" />
+				</div>
+				<div id="keyboard">
+					<table border="1" cellspacing="10" cellpadding="0">
+						<tr>
+							<td class="typing">1</td>
+							<td class="typing">2</td>
+							<td class="typing">3</td>
+							<td rowspan="2" class="dele"><img src="image/删除.png" style="width: 50%;"></td>
+						</tr>
+						<tr>
+							<td class="typing">4</td>
+							<td class="typing">5</td>
+							<td class="typing">6</td>
+						</tr>
+						<tr>
+							<td class="typing">7</td>
+							<td class="typing">8</td>
+							<td class="typing">9</td>
+							<td rowspan="2" class="btnBox">
+								<div class="MainColumn" style="width: 100%; height: 100%;">
+									<button class="determine" type="button">确定</button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="typing">0</td>
+							<td class="typing dian">.</td>
+							<td class="typing dandan">00</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="successful">
+				<div class="succTitle">
+					<div class="imgBox">
+						<img src="image/none.jpg" class="img" />
+						<span style="display: block;">(´◔ ‸◔`)该商户暂未生效</span>
+					</div>
+				</div>
+			</div>
+			<div class="complete">
+				<div class="top">
+					<div class="blueText">
+						<img src="" style="width: 7vw; margin-right: 2vw;" >
+						<span>支付成功</span>
+					</div>
+					<div class="mone">
+						￥<span class="orderMoney"></span>
+					</div>
+					<div class="formContent">
+						<ul style="font-family: SFUIText-regular; color: #999999; width: 40%;">
+							<li>订单时间</li>
+							<li>订单号</li>
+							<li>订单金额</li>
+						</ul>
+						<ul style="text-align: right; font-family: SourceHanSansSC-regular; color: #000000; width: 60%;">
+							<li class="orderTime"></li>
+							<li class="orderNum"></li>
+							<li>￥<span class="orderMoney"></span></li>
+						</ul>
+					</div>
+					<div class="bottom">
+						<button type="button" class="btn">完成</button>
+					</div>
+				</div>
+				<div class="advertisement">
+					<img src="./image/none.jpg" >
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			//时间戳转yyyy-MM-dd HH:mm:ss格式
+			function formatUnixtimestamp (unixtimestamp){
+				var unixtimestamp = new Date(unixtimestamp*1000);
+				var year = 1900 + unixtimestamp.getYear();
+				var month = "0" + (unixtimestamp.getMonth() + 1);
+				var date = "0" + unixtimestamp.getDate();
+				var hour = "0" + unixtimestamp.getHours();
+				var minute = "0" + unixtimestamp.getMinutes();
+				var second = "0" + unixtimestamp.getSeconds();
+				return year + "-" + month.substring(month.length-2, month.length)  + "-" + date.substring(date.length-2, date.length)
+				+ "  " + hour.substring(hour.length-2, hour.length) + ":"
+				+ minute.substring(minute.length-2, minute.length) + ":"
+				+ second.substring(second.length-2, second.length);
+			};
+			
+			//获取页面参数方法
+			function GetUrlParam(paraName) {
+				var url = document.location.toString();
+				// var url = 'http://192.168.1.90:8080/web/pay2/index.html#/?userAgent=2&userId=1273813395757785088';
+				var arrObj = url.split("?");
+				if (arrObj.length > 1) {
+					var arrPara = arrObj[1].split("&");
+					var arr;
+					for (var i = 0; i < arrPara.length; i++) {
+						arr = arrPara[i].split("=");
+						if (arr != null && arr[0] == paraName) {
+							return arr[1];
+						};
+					};
+					return "";
+				}else {
+					return "";
+				};
+			};
+			
+			//微信官方支付方法
+			function onBridgeReady(data){
+				WeixinJSBridge.invoke(
+					'getBrandWCPayRequest', {
+						"appId":data.appId,//公众号名称，由商户传入
+						"timeStamp":data.timeStamp,//时间戳，自1970年以来的秒数
+						"nonceStr":data.nonceStr,//随机串
+						"package":data.pkg,
+						"signType":"MD5",//微信签名方式
+						"paySign":data.paySign //微信签名
+					},
+					function(res){
+					// console.log('ressss',res)
+					// 使用以上方式判断前端返回,微信团队郑重提示：
+					//res.err_msg将在用户支付成功后返回ok，但并不保证它绝对可靠。
+					if(res.err_msg == "get_brand_wcpay_request:ok" ){
+						setTimeout(function(){
+							$('.payment').hide();
+							$('.complete').fadeIn();
+						},500);
+						$('.btn').css({'border': '#07c160', 'color': '#07c160'});
+						$('.orderTime').text(formatUnixtimestamp(data.timeStamp));
+						$('.orderNum').text(data.orderNumber);
+						$('.orderMoney').text(data.price);
+					};
+				}); 
+			}
+			
+			//全局变量
+			var userAgent,userid,openid;
+			//页面加载完成
+			$(document).ready(function (){
+				$('.determine').css('height',$('.MainColumn').outerHeight(true) + 10 + 'px');
+				userAgent = GetUrlParam('userAgent');
+				userid = GetUrlParam('userId');
+				openid = GetUrlParam('openId');
+				if(!(userid) || userAgent == 412){
+					$('.successful').show();
+				}else{
+					if(userAgent == 0){
+						//调用微信授权接口
+						$.ajax({
+							url: 'http://oem.weiliangjian.com/order/app/wx_login2',
+							type: "GET",
+							data: {
+								userId: userid
+							},
+							success: function(res){
+								window.location.href = res.url;
+							},
+							error: function(res){
+								alert('失败');
+							}
+						});
+					}else if(userAgent == 1){
+						$('title').text('微信支付');
+						$('.payment').show();
+						$('.blueText').css('color','#07c160');
+						$('.blueText img').attr('src', 'image/wxsuccess.png');
+						//调用微信回调接口
+						$.ajax({
+							url: 'http://oem.weiliangjian.com/merchant/merchant/getMerchantName',
+							type: "GET", 
+							data: {
+								userId: userid
+							},
+							success: function (res) {
+								$('.merchantsName').text(res.obj);
+								$('.cent').css('color','#07c160');
+								$('#btn').attr({'disabled':true, 'opacity': 1}).css('background','#aeddbb');
+								$('.determine').attr({'disabled':true, 'opacity': 1}).css('background','#aeddbb');
+							},
+							error: function (res) {}
+						});
+					}else if (userAgent == 2) {
+						$('title').text('支付宝支付');
+						$('.payment').show();
+						$('.blueText').css('color','#1087c6');
+						$('.blueText img').attr('src', 'image/alisuccess.png');
+						//支付宝回调
+						$.ajax({
+							url: 'http://oem.weiliangjian.com/merchant/merchant/getMerchantName',
+							type: "GET", 
+							data: {
+								userId: userid
+							},
+							success: function (res) {
+								$('.merchantsName').text(res.obj);
+								$('.cent').css('color','#1087c6');
+								$('#btn').attr({'disabled':true, 'opacity': 1}).css('background','#acd5eb');
+								$('.determine').attr({'disabled':true, 'opacity': 1}).css('background','#acd5eb');
+							},
+							error: function (res) {}
+						});
+					};
+				};
+			});
+			
+			var money='';
+			var num = 0;
+			//键盘输入事件
+			$('.typing').click(function(e){
+				// console.log(1111);
+				//保留两位小数,为小数时00不能键入
+				if(num>=2||(e.target.textContent == '00'&&money.indexOf('.')!=-1)){
+					return ;
+				};
+				
+				//首位为0时后面只能追加'.',其他的不能键入
+				if(money == '0' && e.target.textContent != '.'){
+					return ;
+				};
+				
+				//首位不能键入'.'或'00'
+				if(money.length == 0 && e.target.textContent == '.' || money.length == 0 && e.target.textContent == '00'){
+					
+				}else{
+					//indexOf等于-1表示没有小数点
+					if(money.indexOf('.') == -1){
+						money += e.target.textContent;
+					}else if(e.target.textContent != '.'){
+						money += e.target.textContent;
+					};
+				};
+				
+				//indexOf不等于-1表示有小数点
+				if(money.indexOf('.')!=-1){
+					//num取值money小数点都的长度
+					num = money.split(".")[1].length;
+				};
+				
+				//money不等于空且大于零,支付按钮可点击
+				if(!(money == '') && money > 0){
+					if(userAgent == 1){
+						$('#btn').attr('disabled',false).css('background','#07c160');
+						$('.determine').attr('disabled',false).css('background','#07c160');
+					}else{
+						$('#btn').attr('disabled',false).css('background','#1087c6');
+						$('.determine').attr('disabled',false).css('background','#1087c6');
+					};
+				}else{
+				//money等于空且小于零,支付按钮不可点击
+					if(userAgent == 1){
+						$('#btn').attr({'disabled':true, 'opacity': 1}).css('background','#aeddbb');
+						$('.determine').attr({'disabled':true, 'opacity': 1}).css('background','#aeddbb');
+					}else{
+						$('#btn').attr({'disabled':true, 'opacity': 1}).css('background','#acd5eb');
+						$('.determine').attr({'disabled':true, 'opacity': 1}).css('background','#acd5eb');
+					};
+				};
+				
+				$('#ipt').text(money);
+			});
+			
+			//删除输入框内容
+			$('.dele').click(function(){
+				//删除输入框内容，最后一个开始删
+				money = $('#ipt').text().slice(0,-1);
+				//删除小数点后的数字
+				if(num>0) num--;
+				
+				if(!(money == '') && money > 0){
+					if(userAgent == 1){
+						$('#btn').attr('disabled',false).css('background','#07c160');
+						$('.determine').attr('disabled',false).css('background','#07c160');
+					}else{
+						$('#btn').attr('disabled',false).css('background','#1087c6');
+						$('.determine').attr('disabled',false).css('background','#1087c6');
+					};
+				}else{
+					if(userAgent == 1){
+						$('#btn').attr({'disabled':true, 'opacity': 1}).css('background','#aeddbb');
+						$('.determine').attr({'disabled':true, 'opacity': 1}).css('background','#aeddbb');
+					}else{
+						$('#btn').attr({'disabled':true, 'opacity': 1}).css('background','#acd5eb');
+						$('.determine').attr({'disabled':true, 'opacity': 1}).css('background','#acd5eb');
+					};
+				};
+				
+				$('#ipt').text(money);
+			});
+			
+			
+			
+			//付款按钮
+			$('#btn').click(function(){
+				var val = $('#ipt').text();
+				var txt = $('.text').val();
+				if(userAgent == 1){
+					//微信支付
+					$.ajax({
+						url: 'http://oem.weiliangjian.com/order/app/web_pay',
+						type: 'POST',
+						data: {
+							totalPrice: val,
+							payWay: userAgent,
+							userId: userid,
+							remarks: txt,
+							openId: openid,
+							payType: 1
+						},
+						success: function(res){
+							if(res.obj.channel == 1){
+								var data = res.obj.jsPayResponse;
+								onBridgeReady(data,function(){
+									setTimeout(function(){
+										$('.payment').hide();
+										$('.complete').fadeIn();
+									},500);
+									$('.btn').css({'border': '#07c160', 'color': '#07c160'});
+									$('.orderTime').text(formatUnixtimestamp(data.timeStamp));
+									$('.orderNum').text(data.orderNumber);
+									$('.orderMoney').text(data.price);
+								},function(res){cosnole.log(res);});
+							}else{
+								window.location.href = res.obj.payUrl;
+							};
+						},
+						error: function(resp){
+							
+						}
+					});
+				}else{
+					//支付宝支付
+					$.ajax({
+						url: 'http://oem.weiliangjian.com/order/app/web_pay',
+						type: 'POST',
+						data: {
+							totalPrice: val,
+							payWay: userAgent,
+							userId: userid,
+							remarks: txt,
+							payType: 1
+						},
+						success: function(res){
+							window.location.href = res.obj.payUrl;
+						},
+						error: function(resp){
+						}
+					});
+				};
+			});
+			
+			//点击键盘确认按钮付款
+			$('.determine').click(function(){
+				var val = $('#ipt').text();
+				var txt = $('.text').val();
+				if(userAgent == 1){
+					//微信支付
+					$.ajax({
+						url: 'http://oem.weiliangjian.com/order/app/web_pay',
+						type: 'POST',
+						data: {
+							totalPrice: val,
+							payWay: userAgent,
+							userId: userid,
+							remarks: txt,
+							openId: openid,
+							payType: 1
+						},
+						success: function(res){
+							if(res.obj.channel == 1){
+								var data = res.obj.jsPayResponse;
+								onBridgeReady(data,function(){
+									setTimeout(function(){
+										$('.payment').hide();
+										$('.complete').fadeIn();
+									},500);
+									$('.btn').css({'border': '#07c160', 'color': '#07c160'});
+									$('.orderTime').text(formatUnixtimestamp(data.timeStamp));
+									$('.orderNum').text(data.orderNumber);
+									$('.orderMoney').text(data.price);
+								},function(res){cosnole.log(res);});
+							}else{
+								window.location.href = res.obj.payUrl;
+							};
+						},
+						error: function(resp){
+							
+						}
+					});
+				}else{
+					//支付宝支付
+					$.ajax({
+						url: 'http://oem.weiliangjian.com/order/app/web_pay',
+						type: 'POST',
+						data: {
+							totalPrice: val,
+							payWay: userAgent,
+							userId: userid,
+							remarks: txt,
+							payType: 1
+						},
+						success: function(res){
+							window.location.href = res.obj.payUrl;
+						},
+						error: function(resp){
+						}
+					});
+				};
+			});
+		</script>
+	</body>
+</html>

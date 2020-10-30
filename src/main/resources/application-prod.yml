@@ -1,0 +1,15 @@
+server:
+  port: 8099
+
+spring:
+  datasource:
+    #driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/shual_db?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+    username: root
+    password: NDH&0.
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: false
+prefix:
+  url: https://oem.weiliangjian.com

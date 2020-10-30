@@ -1,0 +1,190 @@
+#server:
+  #port: 46000
+#  ssl:
+#    key-store: classpath:lypay.pfx
+#    key-store-password: 123456
+#    keyStoreType: PKCS12
+spring:
+  jpa:
+    show-sql: true
+  mail:
+    host: smtpdm.aliyun.com
+    port: 465
+    username: admin
+    password: 123456
+    properties:
+      smtp:
+        auth: true
+        starttls:
+          enable: true
+          required: true
+      mail:
+        smtp:
+          ssl:
+            enable: true
+  http:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+      enabled: true
+  redis:
+     host: 127.0.0.1
+     #port: 8888
+     password: hKTM0xe7E3
+     port: 6379
+     database: 0
+     timeout: 10000
+     pool:
+       max-active: 100
+       max-idle: 16
+       max-wait: 10
+       min-idle: 8
+file:
+  upload:
+     path: WorkDir/temp/md5/
+     certPath: WorkDir/temp/
+#    path: E:/WorkDir/temp/md5/
+#    certPath: E:/WorkDir/temp/
+  zip:
+    path: WorkDir/temp/zip/
+logging:
+  path: logs/admin
+  level:
+    root: info
+  config: classpath:logback-spring.xml
+
+#logging:
+#  path: logs/admin
+#  level:
+#    root: info
+#    org.hibernate.SQL: debug
+#    org.springframework.security:
+#      - debug
+#      - info
+#    org.springframework.web: error
+#    org.hibernate.engine.QueryParameters: debug
+#    org.hibernate.engine.query.HQLQueryPlan: debug
+#    org.hibernate.type.descriptor.sql.BasicBinder: trace
+#  config: classpath:logback-spring.xml
+
+secret:
+  key: lysj #HS512秘钥
+  header: authorized #token在HTTP请求头名
+  tokenExpiration: 10080 #token过期时间（分钟）7天
+  tokenRefresh: 1440 #token剩余时间小于X分钟刷新token 1天
+
+wxpay:
+  successXml: <xml> <return_code><![CDATA[SUCCESS]]></return_code> <return_msg><![CDATA[OK]]></return_msg> </xml>
+  failXml: <xml> <return_code><![CDATA[FAIL]]></return_code> <return_msg><![CDATA[返回消息失败]]></return_msg> </xml>
+yrmpay:
+  successXml: <xml> <returnCode>success</returnCode> <returnMsg>接收成功</returnMsg>
+  failXml: <xml> <returnCode>fail</returnCode> <returnMsg>接收失败</returnMsg>
+
+speech:
+  filePath: WorkDir/music/
+  intervalTime:  10000
+qrcode:
+  path: WorkDir/temp/lypay/
+app:
+  module:
+    mainVersion: ${project.version}
+    buildVersion: ${project.version}
+facepay:
+  #电子发票
+  invoice:
+    # 服务商Id
+    channelId: 683
+    #    channelId: 40
+    # 默认营业员
+    defaultSalesperson: 15859000687
+    # 数族科技支付管理平台 apia
+    api: https://paymgmt.shuzutech.com/
+    # 数族技术文档 api
+    sellerApi: https://yunying.shuzutech.com/api/
+    # AppId
+    appId: 528ed9f98357fffcfb861e9ccb2a5ec2
+    # AppSecret
+    appSecret: 852b6fc51f0f5c6c7c1db53a0ff744ac310009c4
+goodslib:
+  url: https://codequery.market.alicloudapi.com/querybarcode
+  aliappcode: aaaaa
+  libType: ali
+# 云票据打印密钥
+sunmin:
+  appId: 9b10609935be40c7acba7a715057547e
+  appKey: 826305fb1b594006832c74f87df6bc68
+# 忽略鉴权url
+ignored:
+  urls:
+    - /swagger-resources
+    - /error
+    - /auth/external/**
+    - /**/export/**
+    - /**/export
+    - /**/download
+    - /api/**
+    - /**/permission/findMenuList
+    - /**/select_item/**
+    - /**/select_item
+    - /auth/login
+    - /favicon.ico
+    - /register
+    - /fms/**
+    - /swagger-ui.html
+    - /swagger-resources/**
+    - /swagger/**
+    - /**/*.jpg
+    - /**/*.jpeg
+    - /**/*.js
+    - /**/*.css
+    - /**/*.png
+    - /**/*.PNG
+    - /**/*.ico
+    - /**/admin/**
+    - /**/**.html
+    - /**/**.xls
+    - /**/**.woff
+    - /**/**.ttf
+    - /**/modify_password
+    - /order/callback/**
+    - /order/app/web_pay
+    - /order/app/wx_login
+    - /order/ly/**
+    - /order/commission/**
+    - /**/**.zip
+    - /**/scan_blank_qrcode
+    - /**/reset_password
+    - /order/management/pc/create_barcode
+    - /**/rotation
+    - /**/call_back
+    - /**/**/bcrm_app/**
+    - /**/**/app/**
+    - /**/app/**
+    - /advertise/**
+    - /common/**
+    - /wechat_open_auth/**
+    - /notify/**
+    - /**.txt
+    - /mp/**
+    - /mini/**
+    - /common/**
+    - /open/**
+    - /member/**
+    - /pay/pay/face/**
+    - /auth/running_account_new/my
+    - /merchant/**
+#    - /notice/**
+    - /pay/pay/deposit/**
+    - /ali/cardtemplate/**
+    - /auth/running_account_new/**
+    - /auth/running_account/**
+    - /ali_pay_info/**
+    - /auth/chinamap/**
+    - /dist/pc/order/**
+    - /advertise/group/**
+    - /device/advertise/**
+    - /device/advertise/home/**
+    - /ali_ocr/**
+    - /auth/disTran/**
+    - /wx/**
+    - /push/**
